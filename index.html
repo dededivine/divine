@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js">           <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet"
+        href="./assets/vendors/bootstrap-icons-1.9.0/bootstrap-icons-1.9.0/bootstrap-icons-1.9.0/bootstrap-icons.css">
+</head>
+
+<body class="dark">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Vine</h1>
+            </div>
+            <ul class="navitems" id="sidebar">
+                <div class="side-card" id="sidebarcard">
+                    <div class="img" style="width: 200px; height: 170px; margin: auto; border-radius: 50%;">
+                        <img src="./assets/images/profile.jpg" style="height: 100%; width: 100%;border-radius: 50%;">
+                    </div>
+                    <div id="showmyprofile" class="details" style="margin-top: 10px;">
+                        <h3>Hi it's Divine <i class="bi bi-chevron-down" style="font-size: 1.5em; color: #0400ff;"></i>
+                        </h3>
+                        <p>
+                            just started web development at Cedars productivity and its been really fun and exciting.
+                            <br>
+                            learning how to code is realy cool and exciting. Passing difficult challenges as you go. I
+                            just want to let you all know that am open for learning more,so if there is any error in my
+                            work please let me know
+                        </p>
+                    </div>
+                </div>
+                <li onclick="navLink('homelink')"><a id="homelink" onclick="closeSidebar()" href="#home"
+                        class="navlinks active">Home</a></li>
+                <li onclick="navLink('aboutlink')"><a id="aboutlink" onclick="closeSidebar()" href="#about"
+                        class="navlinks">About</a></li>
+                <li onclick="navLink('prolink')"><a id="prolink" onclick="closeSidebar()" href="#projects"
+                        class="navlinks">Projects</a></li>
+                <li onclick="navLink('servelink')"><a id="servelink" onclick="closeSidebar()" href="#services"
+                        class="navlinks">Services</a></li>
+            </ul>
+            <div class="btn">
+                <div class="theme" id="themetoggle">
+                    <i class="bi bi-cloud-sun-fill" style="font-size: 16px; color: #ffee00;"></i>
+                    <i class="bi bi-stars" style="font-size: 16px; color: #fcff5a;"></i>
+                    <div id="tgbtn" class="switch">
+
+                    </div>
+                </div>
+                <button>Contact Me</button>
+                <div id="menu" class="menu">
+                    <i class="bi bi-list" style="font-size: 2em; color: #007bff;"></i>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ========== Start Home ========== -->
+    <div class="home" id="home">
+        <h1>Welcome To My Portfolio</h1>
+        <h2>Divine Divine</h2>
+
+        <div class="btn">
+            Contact Me
+        </div>
+    </div>
+    <!-- ========== End Home ========== -->
+
+    <!-- ========== Start About ========== -->
+    <div class="about" id="about">
+        <h1>About Me</h1>
+        <h3>Get to know all about me</h3>
+        <div class="para">
+            <p>
+                Hi there i,m Divine deinma, a trainee web developer specializing in the client side web dev ,
+                server side web dev, game dev,mobile app dev.With a strong passion for
+                problrm solving and unravling insights from complex datasets, i'm dedicated to helping you stay ahead in
+                todays data driven world. by gaining a deep understanding of these languages <strong>(Html, Css,
+                    Javascript,React ,etc)</strong> i hope to become a mentor and a teacher in my society someday .</p>
+
+
+        </div>
+        <div class="btn">
+            <button>Download Resume</button>
+        </div>
+    </div>
+    <!-- ========== End About ========== -->
+
+    <!-- ========== Start projects ========== -->
+    <div class="projects" id="projects">
+        <h1>Projects</h1>
+
+        <div class="category-buttons">
+            <button class="cat-btn active" data-filter="web-apps">Web Apps</button>
+            <button class="cat-btn " data-filter="games">Games</button>
+            <button class="cat-btn " data-filter="websites">Websites</button>
+        </div>
+        <div class="project-container" id="project-cont">
+
+            <!-- =============project cards========== -->
+
+            <div class="project" data-category="games">
+                <div class="project_img">
+                    <img src="" alt="image description">
+                </div>
+                <div class="project-details">
+                    <h2>${project.name}
+                    </h2> <a href=${project.link}>
+                        Demo
+                    </a>
+                </div>
+            </div>
+            <div class="project" data-category="websites">
+                <div class="project_img">
+                    <img src="" alt="image description">
+                </div>
+                <div class="project-details">
+                    <h2>${project.name}
+                    </h2> <a href=${project.link}>
+                        Demo
+                    </a>
+                </div>
+            </div>
+
+            <!-- ========== project cards -->
+        </div>
+    </div>
+    <!-- ========== End projects ========== -->
+
+    <!-- ========== Start services section ========== -->
+    <div class="services" id="services">
+        <div class="heads">
+            <h1>My Services</h1>
+        </div>
+
+        <div class="grid">
+            <div class="box1">
+                <h3>Tech consultancy</h3>
+                <p>get expert advice on optimizing <br> your digital strategy</p>
+            </div>
+            <div class="box1">
+                <h3>Quick fix</h3>
+                <p>having problems <br> with your Project contact me now <br> or chat with me...</p>
+            </div>
+            <div class="box1">
+                <h3>Tutorials</h3>
+                <p>ever wanted to <br> be a programmer join <br>tech world coding camp!!!</p>
+            </div>
+            <div class="box1">
+                <h3>Quality Websites</h3>
+                <p>Get fast scalable responsive <br>websites with <br>free maintainance</p>
+            </div>
+            <div class="box1">
+                <h3>Training</h3>
+                <p>Want to become a pro in computer <br>join techworld online <br>Training free</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- ========== End services section ========== -->
+
+    <!-- ========== Start footer ========== -->
+    <footer>
+        <div class="footer-img">
+            <div class="footer-card">
+                <div class="last-img">
+                    <img src="./assets/images/profile.jpg" alt="">
+                </div>
+            </div>
+            <div class="foot-details" style="margin-top: 10px;">
+                <h3>Hi it's Divine
+                </h3>
+                <p>
+                    just started web development at Cedars productivity and its been really fun and exciting.
+                    <br>
+                    learning how to code is realy cool and exciting. Passing difficult challenges as you go. I
+                    just want to let you all know that am open for learning more,so if there is any error in my
+                    work please let me know
+                </p>
+
+            </div>
+        </div>
+
+        <div class="foot">
+            <p>
+                &copy; Divine Deinma ( :
+            </p>
+        </div>
+    </footer>
+    <!-- ========== End footer ========== -->
+
+
+    <script src="./assets/js/index.js" async defer></script>
+    <script src="./assets/js/project-filter.js" async defer></script>
+</body>
+
+</html>
